@@ -15,5 +15,6 @@ export const Post =memo(({ title, text, date, image }: PostProps) => {
                 <span className={cls.date}>{date}</span>
               </div>
               <span className={cls.text}>{text}</span>
+              <hr className={cls.hr}/>
             </div>
 })

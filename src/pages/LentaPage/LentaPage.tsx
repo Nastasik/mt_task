@@ -1,12 +1,6 @@
 import { memo } from "react"
 import { Post } from "./components/Post/Post"
-const LENTA_DATA = [{
-    id: '6465',
-    image: '#',
-    text: 'text',
-    title: 'title',
-    date: 'date',
-}]
+import { LENTA_DATA } from "./mocks/lenta_data"
 
 export const LentaPage = memo(() => {
     return <div>

@@ -1,20 +1,47 @@
 .Post {
   position: relative; 
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 36px 36px;
 }
 
 .img {
+  border: 1px solid #777777;
+  margin: 13px auto;
   padding: 0;
 }
 
 .title {
-  padding: 0;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1D1E21;
 }
 
 .text {
-  font-size: medium;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1D1E21;
+  margin-top: 12px;
 }
 
 .date {
-  color: grey;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ABABAB;
+  margin-left: 8px;
+}
+
+.hr {
+  width: 100%;
+  margin: 36px 0 0;
+  border: 1px solid #D9D9D9;
 }
