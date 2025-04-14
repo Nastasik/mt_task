@@ -8,6 +8,7 @@ import BellIcon from './assets/icons/Bell.svg';
 import BookmarkIcon from './assets/icons/Bookmark.svg';
 import ChatIcon from './assets/icons/Chat.svg';
 import VideoIcon from './assets/icons/Video.svg';
+import Avatar from './assets/avatar.png';
 import * as cls from './App.module.scss';
 
 const SIDEBAR_ITEMS = [
@@ -42,8 +43,8 @@ export const App = memo(() => {
     const [headerTitle, setHeaderTitle] = useState('лента')
     return <div className={cls.App}>
                 <Sidebar list={SIDEBAR_ITEMS}/>
-                <div>
-                    <Header title={headerTitle}/>
+                <div className={cls.wrapper} >
+                    <Header title={headerTitle} avatar={Avatar}/>
                     <AppRouter />
                 </div>
             </div>
