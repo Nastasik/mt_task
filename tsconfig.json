@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist/", 
+        "noImplicitAny": true, 
+        "module": "esnext",
+        "target": "esnext", 
+        "jsx": "react-jsx", 
+        "allowJs": true, 
+        "strict": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true, 
+        "esModuleInterop": true, 
+        "isolatedModules": true
+    },
+    "ts-node": { 
+        "compilerOptions": {
+          "module": "CommonJS"
+        }
+      },
+      "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+,       "global.d.ts"      ],
+  }
