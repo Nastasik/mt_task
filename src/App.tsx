@@ -2,32 +2,38 @@ import { memo, useState } from 'react';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { Header } from './components/Header/Header';
 import { AppRouter } from './components/AppRouter/AppRouter';
+import UnionIcon from './assets/icons/Union.svg';
+import CompassIcon from './assets/icons/Compass.svg';
+import BellIcon from './assets/icons/Bell.svg';
+import BookmarkIcon from './assets/icons/Bookmark.svg';
+import ChatIcon from './assets/icons/Chat.svg';
+import VideoIcon from './assets/icons/Video.svg';
 import * as cls from './App.module.scss';
 
 const SIDEBAR_ITEMS = [
     {
-        icon: '',
+        icon: UnionIcon,
         path: '/lenta',
         title: 'Лента',
 
     }, {
-        icon: '',
+        icon: CompassIcon,
         path: '/channels',
         title: 'Каналы'
     }, {
-        icon: '',
+        icon: VideoIcon,
         path: '/video',
         title: 'Видео'
     }, {
-        icon: '',
+        icon: BookmarkIcon,
         path: '/saved',
         title: 'Сохраненное'
     }, {
-        icon: '',
+        icon: BellIcon,
         path: '/notifications',
         title: 'Уведомления'
     }, {
-        icon: '',
+        icon: ChatIcon,
         path: '/chats',
         title: 'Чаты'
     }
