@@ -2,8 +2,30 @@
   position: relative; 
   display: flex;
   flex-direction: column;
-  width: 682px;
-  padding: 0;
+  width: 236px;
+  padding: 36px;
 }
 
+.logo {
+  margin-bottom: 36px;
+}
 
+.info {
+  position: fixed;
+  display: flex;
+  bottom: 18px;
+  color: #8F98A6;
+  padding: 8px 16px 8px 12px;
+}
+
+.info_icon {
+  margin-right: 16px;
+}
+
+.info_title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}

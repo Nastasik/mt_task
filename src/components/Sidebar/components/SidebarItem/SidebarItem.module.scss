@@ -1,13 +1,22 @@
 .SidebarItem {
+  color: #1D1E21;
+  text-decoration: none;
   position: relative; 
-  padding: 0;
+  display: flex;
+  padding: 10px 16px 10px 10px;
 }
 
 .title {
-  font-size: 24px;
   padding: 0;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-left: 16px;
 }
 
 .icon {
-  width: 50px;
+  width: 28px;
+
 }
