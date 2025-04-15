@@ -10,6 +10,36 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   padding: 0;
 }
 
+.hide {
+  animation: animate-hide 1.2s forwards;
+}
+
+@keyframes animate-hide {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    top: -42px;
+    opacity: 0;
+  }
+}
+
+.emergence {
+  animation: animate-emergence 1.2s forwards;
+}
+
+@keyframes animate-emergence {
+  0% {
+    opacity: 0;
+    top: -42px;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .title {
   font-family: Inter;
   font-weight: 400;
