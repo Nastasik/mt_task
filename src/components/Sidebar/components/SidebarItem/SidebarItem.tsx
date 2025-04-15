@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, NavLinkRenderProps } from 'react-router-dom';
 import * as cls from './SidebarItem.module.scss';
 
 type SidebarItemProps = {
@@ -10,9 +10,12 @@ type SidebarItemProps = {
 }
 
 export const SidebarItem =memo(({ title, Icon, path, newPostCount }: SidebarItemProps) => {
-    return (<Link to={path} className={cls.SidebarItem}>
+    const activeStyle = ({ isActive }: NavLinkRenderProps) => ({
+        fontWeight: isActive ? 700 : 500,
+    });
+    return (<NavLink to={path} style={activeStyle} className={cls.SidebarItem}>
                 <div className={cls.icon}><Icon /></div>
                 <span className={cls.title}>{title}</span>
                 {newPostCount ? <span className={cls.newPostCount}>{newPostCount}</span> : null}
-            </Link>)
+            </NavLink>)
 })
