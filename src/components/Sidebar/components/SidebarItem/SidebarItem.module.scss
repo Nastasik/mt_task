@@ -18,5 +18,18 @@
 
 .icon {
   width: 28px;
+}
 
+.newPostCount {
+  position: absolute;
+  right: -18px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  padding: 2px 6px; 
+  border-radius: 12px;
+  background: #1879FF;
+  color: #FFFFFF;
+  margin-left: 36px;
 }

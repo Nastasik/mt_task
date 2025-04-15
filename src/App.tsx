@@ -32,11 +32,13 @@ const SIDEBAR_ITEMS = [
     }, {
         icon: BellIcon,
         path: '/notifications',
-        title: 'Уведомления'
+        title: 'Уведомления', 
+        newPostCount: 1
     }, {
         icon: ChatIcon,
         path: '/chats',
-        title: 'Чаты'
+        title: 'Чаты',
+        newPostCount: 1
     }
 ]
 export const App = memo(() => {

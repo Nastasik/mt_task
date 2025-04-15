@@ -11,7 +11,7 @@ type SidebarProps = {
 export const Sidebar = memo(({list}: SidebarProps) => {
     return <div className={cls.Sidebar}>
                 <div className={cls.logo}><Logo /></div>
-                {list.map(({ title, icon, path }) => <SidebarItem key={title} title={title} Icon={icon} path={path} /> )}
+                {list.map(({ title, icon, path, newPostCount }) => <SidebarItem key={title} newPostCount={newPostCount} title={title} Icon={icon} path={path} /> )}
                 <div className={cls.info}>
                     <div className={cls.info_icon}><InfoIcon /></div>
                     <div className={cls.info_title}>О компании...</div>
