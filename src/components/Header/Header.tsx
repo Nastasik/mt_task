@@ -27,6 +27,7 @@ export const Header =memo(({title, avatar}: HeaderProps) => {
             lastScroll = scrollPosition();
         }
         window.addEventListener('scroll', onScroll)
+        return () => window.removeEventListener('scroll', onScroll)
     }, [])
 
     return <div className={`${cls.Header} ${cls[isHide]}`}>

@@ -16,7 +16,6 @@ const SIDEBAR_ITEMS = [
         icon: UnionIcon,
         path: '/',
         title: 'Лента',
-
     }, {
         icon: CompassIcon,
         path: '/channels',
@@ -42,7 +41,7 @@ const SIDEBAR_ITEMS = [
     }
 ]
 export const App = memo(() => {
-    const [headerTitle, setHeaderTitle] = useState('лента')
+    const [headerTitle, setHeaderTitle] = useState('Лента')
     return <div className={cls.App}>
                 <Sidebar list={SIDEBAR_ITEMS}/>
                 <div className={cls.wrapper} >
