@@ -14,7 +14,7 @@ import * as cls from './App.module.scss';
 const SIDEBAR_ITEMS = [
     {
         icon: UnionIcon,
-        path: '/lenta',
+        path: '/',
         title: 'Лента',
 
     }, {

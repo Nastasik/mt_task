@@ -13,7 +13,7 @@ export enum AppRoutes {
 
 export const routeConfig = {
     [AppRoutes.LENTA]: {
-        path: '/lenta',
+        path: '/',
         element: <LentaPage />,
     },
     [AppRoutes.CHANNELS]: {
